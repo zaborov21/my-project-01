@@ -166,7 +166,7 @@ img {
   min-width: 1110px;
   min-height: 800px;
   background-color: #737373;
-  background-image: url("/images/desktop/hero/hero-img.jpg");
+  background-image: url("../images/desktop/hero/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -284,12 +284,13 @@ img {
   color: #ffffff;
 }
 
-.btn {
+.callback-btn {
   width: 127px;
   height: 47px;
   font-size: 16px;
   line-height: 0.76;
   color: #ffffff;
+  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 4px;
 }
@@ -406,7 +407,7 @@ img {
   height: 45px;
   font-size: 16px;
   line-height: 0.76;
-  background: #CF404D;
+  background-color: #CF404D;
   border-radius: 4px;
   color: #ffffff;
 }
