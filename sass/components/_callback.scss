@@ -1,0 +1,31 @@
+.callback {
+  @extend %inner-container;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color;
+
+  &-title {
+    display: inline-block;
+
+    padding: 44px 0px;
+
+    font-size: 31px;
+    line-height: 0.86;
+
+    color: $primary-white-color;
+  }
+}
+.btn {
+  width: 127px;
+  height: 47px;
+
+  font-size: 16px;
+  line-height: 0.76;
+
+  color: $primary-white-color;
+
+  border: 2px solid $primary-white-color;
+  border-radius: 4px;
+}

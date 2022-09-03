@@ -1,0 +1,6 @@
+.primary-wrapper{
+    @extend %container;
+    
+    display: flex;
+    width: 1440px;
+}

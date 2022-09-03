@@ -1,0 +1,14 @@
+.lightbox{
+    @extend %inner-container;
+}
+.lightbox-list{
+    @extend %list;
+    @include card-set();
+
+    margin-top: 72px;
+    margin-bottom: 63px;
+
+    &__item{
+        @include card-set-item(20px, 4);
+    }
+}

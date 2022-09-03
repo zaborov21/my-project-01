@@ -1,30 +1,14 @@
 @import './utils/vars';
-@import './components/body';
 @import './base/base';
 @import './utils/placeholders';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+@import './components/primary-wrapper';
+@import './components/secondary-wrapper';
 @import './components/header';
-@import './components/logo';
-@import './components/mobile-menu';
-@import './components/site-menu';
-@import './components/site-contact';
-@import './components/button';
 @import './components/hero';
-@import './components/advantage';
-@import './components/experience';
-@import './components/team';
-@import './components/clients';
-@import './components/footer-page';
-@import './components/footer-logo';
-@import './components/address';
-@import './components/social-container';
-@import './components/subscribe-container';
-@import './components/modal';
-@import './components/modal-form';
-@import './components/control-list';
-@import './components/portfolio-cards';
-
-
-
-
+@import './components/adventeges';
+@import './components/callback';
+@import './components/lightbox';
+@import './components/contact';
+@import './components/footer';
