@@ -9,6 +9,6 @@
     margin-bottom: 63px;
 
     &__item{
-        @include card-set-item(20px, 4);
+        @include card-set-item();
     }
 }
