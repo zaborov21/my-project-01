@@ -25,13 +25,27 @@
           </ul>
       </nav>
       <ul class="nav-social-list">
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-facebook icon"><use href="./images/icons/icons.svg#icon-facebook"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-twitter icon"><use href="./images/icons/icons.svg#icon-twitter"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-wibe icon"><use href="./images/icons/icons.svg#icon-wibe"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-be icon"><use href="./images/icons/icons.svg#icon-be"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-w icon"><use href="./images/icons/icons.svg#icon-w"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-instagram icon"><use href="./images/icons/icons.svg#icon-instagram"></use></svg></a></li>
-          <li class="nav-social-list__item"><a class="nav-social-list__link" href=""><svg class="icon-envelope icon"><use href="./images/icons/icons.svg#icon-envelope"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"><svg class="icon-facebook icon"><use href="./images/icons/icons.svg#icon-facebook"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"><svg class="icon-twitter icon"><use href="./images/icons/icons.svg#icon-twitter"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="wibe"><svg class="icon-wibe icon"><use href="./images/icons/icons.svg#icon-wibe"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="be"><svg class="icon-be icon"><use href="./images/icons/icons.svg#icon-be"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="w"><svg class="icon-w icon"><use href="./images/icons/icons.svg#icon-w"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"><svg class="icon-instagram icon"><use href="./images/icons/icons.svg#icon-instagram"></use></svg></a></li>
+          <li class="nav-social-list__item"><a class="nav-social-list__link" href="" target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="email"><svg class="icon-envelope icon"><use href="./images/icons/icons.svg#icon-envelope"></use></svg></a></li>
       </ul>
     </header>
     <div class="secondary-wrapper">
@@ -97,15 +111,26 @@
           <h2 class="title">Contact Form</h2>
           <p class="descr">This is some text inside of a div block.</p>
           <form class="contact-form">
-            <div class="input-wrapper">
+            <div class="input-group">
+             <div class="input-wrapper">
+              <span class="input-wrappe__name">Name</span>
               <label for="input-name"></label>
-            <input class="input-name" id="input-name" type="text" required placeholder="Name">
-            <label for="input-email"></label>
-            <input class="input-email" id="input-email" type="email" required placeholder="Email">
+              <input class="input-name input" id="input-name" type="text" required placeholder="">
+              <svg class="icon-person-input input-icon" width="18" height="18"><use href="/images/icons/icons.svg#icon-person-input"></use></svg>
+             </div>
+            <div class="input-wrapper">
+              <span class="input-wrappe__name">Email</span>
+              <label for="input-email"></label>
+            <input class="input-email input" id="input-email" type="email" required placeholder="">
+            <svg class="icon-email-input input-icon" width="18" height="18"><use href="/images/icons/icons.svg#icon-email-input"></use></svg>
             </div>
+            </div>
+            <div class="input-wrapper__textarea">
+              <span class="input-wrapper-name__textarea">Message</span>
             <label for="input-textarea"></label>
-            <textarea class="input-textarea" id="input-textarea" cols="30" rows="10" required placeholder="Message"></textarea>
-         <button class="contact-form__btn btn" type="submit">Send</button>
+            <textarea class="input-textarea" id="input-textarea" cols="30" rows="10" required placeholder="write your message..."></textarea>
+            </div>
+         <button class="contact-form__btn btn" type="submit">Send<svg class="icon-send"><use href="/images/icons/icons.svg#icon-send"></use></svg></button>
           </form>
         </section>
       </main>

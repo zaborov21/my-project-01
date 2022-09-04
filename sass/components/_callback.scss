@@ -26,6 +26,16 @@
 
   color: $primary-white-color;
   background-color: transparent;
-  border: 2px solid $primary-white-color;
+  border: 1px solid $primary-white-color;
   border-radius: 4px;
+
+  &:hover{
+    color: $bg-line;
+
+    background-color: transparent;
+    border: 1px solid $bg-line;
+
+    transition: border 200ms $time-function;
+    transition:  color 200ms $time-function;
+  }
 }

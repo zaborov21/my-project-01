@@ -1,14 +1,25 @@
-.lightbox{
-    @extend %inner-container;
+.lightbox {
+  @extend %inner-container;
 }
-.lightbox-list{
-    @extend %list;
-    @include card-set();
+.lightbox-list {
+  @extend %list;
+  @include card-set();
 
-    margin-top: 72px;
-    margin-bottom: 63px;
+  margin-top: 72px;
+  margin-bottom: 63px;
 
-    &__item{
-        @include card-set-item();
-    }
+  &__item {
+    @include card-set-item();
+  }
+}
+.lightbox-list__img {
+  scale: 1;
+  transition: scale $time $time-function;
+  &:hover,
+  &:focus {
+      cursor: pointer;
+      scale: 1.1;
+
+      transition: scale $time $time-function;
+  }
 }

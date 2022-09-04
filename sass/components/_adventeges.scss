@@ -37,6 +37,10 @@
   color: rgba(0, 0, 0, 0.74);
 }
 .adventeges-list__link {
+  position: relative;
+  display: inline-block;
+
+  overflow: hidden;
   margin-top: 7px;
 
   text-decoration: none;
@@ -44,4 +48,23 @@
   line-height: 0.8;
 
   color: $primary-link-color;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    border-bottom: 2px solid $primary-link-color;
+
+    transform: translateX(-101%);
+
+    transition: transform $time $time-function;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: translateX(0%);
+
+    transition: transform $time $time-function;
+  }
+  outline: none;
 }

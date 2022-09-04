@@ -1,10 +1,9 @@
 .hero {
-
   min-width: 1110px;
   min-height: 800px;
 
   background-color: $thirty-text-color;
-  background-image: url('../images/desktop/hero/hero-img.jpg');
+  background-image: url("../images/desktop/hero/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,8 +43,31 @@
   border-radius: 4px;
   border: 2px solid $btn-color;
   color: $primary-white-color;
+
+  transition: background-color $time $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-color-hover;
+
+    transition: background-color $time $time-function;
+  }
 }
 .white-btn {
-  border: 2px solid $primary-white-color;
+  border: 1px solid $primary-white-color;
   background-color: transparent;
+
+  transition: border 200ms $time-function;
+  transition: color 200ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $bg-line;
+
+    background-color: transparent;
+    border: 1px solid $bg-line;
+
+    transition: border 200ms $time-function;
+    transition: color 200ms $time-function;
+  }
 }
