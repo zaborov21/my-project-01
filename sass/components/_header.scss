@@ -68,12 +68,6 @@
 
   color: $primary-white-color;
 }
-.current-link::after {
-  content: "";
-  display: block;
-
-  border-bottom: 2px solid $primary-white-color;
-}
 .nav-social-list {
   @extend %list;
 
