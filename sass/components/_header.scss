@@ -8,6 +8,16 @@
   padding-bottom: 30px;
 
   background-color: $aside-bg-color;
+
+  // @media screen and (min-width: 320px) {
+  //   display: none;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   display: block;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   display: block;
+  // }
 }
 .logo {
   display: inline-block;
@@ -34,15 +44,16 @@
 }
 .site-nav-list__item {
   overflow: hidden;
+
+  &:hover::after,
+  &:focus::after {
+    transform: translateX(0%);
+
+    transition: transform $time $time-function;
+  }
+
   &:not(:first-child) {
     margin-top: 40px;
-
-    &:hover::after,
-    &:focus::after {
-      transform: translateX(0%);
-
-      transition: transform $time $time-function;
-    }
   }
 }
 .site-nav-list__item::after {
@@ -68,19 +79,13 @@
 
   color: $primary-white-color;
 }
-.current-link::after {
-  content: "";
-  display: block;
-
-  border-bottom: 2px solid $primary-white-color;
-}
 .nav-social-list {
   @extend %list;
 
   display: flex;
 
   margin-top: auto;
- 
+
   .icon {
     width: 23px;
     height: 17px;
@@ -89,7 +94,8 @@
     transition: fill $time $time-function;
   }
 
-  &__link:hover .icon:hover, &__link:focus .icon:focus{
+  &__link:hover .icon:hover,
+  &__link:focus .icon:focus {
     fill: $primary-link-color;
 
     transition: fill $time $time-function;
