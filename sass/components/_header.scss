@@ -37,6 +37,12 @@
   &:not(:first-child) {
     margin-top: 40px;
   }
+  &:hover::after,
+    &:focus::after {
+      transform: translateX(0%);
+
+      transition: transform $time $time-function;
+    }
 }
 .site-nav-list__item::after {
   content: "";
